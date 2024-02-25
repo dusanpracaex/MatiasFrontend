@@ -36,7 +36,7 @@ cron.schedule(
 const app = express();
 //! PORT
 const PORT = process.env.PORT || 5000;
-
+console.log("backend","https://matias-kiam.onrender.com");
 //Middlewares
 app.use(express.json()); //Pass json data
 // corse middleware
