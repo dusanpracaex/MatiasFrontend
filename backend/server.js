@@ -46,6 +46,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(function (req, res, next) {
     res.setHeader('access-control-allow-origin', 'https://matiasfrontend.onrender.com');
+  next();
 }
 // Passport middleware
 app.use(passport.initialize());
