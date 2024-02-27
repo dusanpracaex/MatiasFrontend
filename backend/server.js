@@ -41,7 +41,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json()); //Pass json data
 // corse middleware
 const corsOptions = {  
-  origin: ['https://goldfish-app-gwh4l.ondigitalocean.app/'],
+  origin: ['https://matiasfrontend.onrender.com'],
   credentials: true};
 app.use(cors(corsOptions));
 // Passport middleware
