@@ -44,7 +44,7 @@ const corsOptions = {
   origin: ["https://goldfish-app-gwh4l.ondigitalocean.app"],
   credentials: true,
 };
-app.use(cors({credentials: true}));
+app.use(cors());
 // Passport middleware
 app.use(passport.initialize());
 app.use(cookieParser()); //automattically parses the cookie
