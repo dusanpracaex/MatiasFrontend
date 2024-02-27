@@ -1,5 +1,5 @@
 require("dotenv").config();
-const corse = require("cors");
+const cors = require("cors");
 const passport = require("./utils/passport-config");
 const express = require("express");
 const cron = require("node-cron");
@@ -44,7 +44,7 @@ const corsOptions = {
   origin: ["https://goldfish-app-gwh4l.ondigitalocean.app"],
   credentials: true,
 };
-app.use(corse());
+app.use(cors());
 // Passport middleware
 app.use(passport.initialize());
 app.use(cookieParser()); //automattically parses the cookie
