@@ -44,10 +44,6 @@ const corsOptions = {
   origin: ['https://matiasfrontend.onrender.com'],
   credentials: true};
 app.use(cors(corsOptions));
-app.use(function (req, res, next) {
-    res.setHeader('access-control-allow-origin', 'https://matiasfrontend.onrender.com');
-  next();
-}
 // Passport middleware
 app.use(passport.initialize());
 app.use(cookieParser()); //automattically parses the cookie
