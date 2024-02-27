@@ -41,7 +41,7 @@ console.log("backend","https://matias-kiam.onrender.com");
 app.use(express.json()); //Pass json data
 // corse middleware
 const corsOptions = {
-  origin: ["https://matias-kiam.onrender.com"],
+  origin: ["https://goldfish-app-gwh4l.ondigitalocean.app/"],
   credentials: true,
 };
 app.use(corse(corsOptions));
