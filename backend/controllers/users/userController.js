@@ -47,7 +47,7 @@ const userController = {
       res.cookie("token", token, {
        // httpOnly: true,
         secure: false,
-        //sameSite: "strict",
+        sameSite: "None",
         maxAge: 24 * 60 * 60 * 1000, //1 day
       });
 
@@ -83,7 +83,7 @@ const userController = {
         });
         //set the token into the cooke
         res.cookie("token", token, {
-          httpOnly: true,
+          //httpOnly: true,
           secure: false,
           sameSite: "None",
           maxAge: 24 * 60 * 60 * 1000, //1 day:
