@@ -43,7 +43,7 @@ app.use(express.json()); //Pass json data
 const corsOptions = {  
   origin: ['https://matiasfrontend.onrender.com'],
   credentials: true};
-app.use(cors(corsOptions));
+app.use(cors());
 // Passport middleware
 app.use(passport.initialize());
 app.use(cookieParser()); //automattically parses the cookie
