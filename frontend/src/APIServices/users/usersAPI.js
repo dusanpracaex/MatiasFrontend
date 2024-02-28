@@ -33,7 +33,7 @@ export const loginAPI = async (userData) => {
   return response.data;
 };
 
-//http://localhost:5000/api/v1/users/checkAuthenticated
+//https://matiasfrontend.onrender.com/api/v1/users/checkAuthenticated
 // ! checkAuthStatus user
 export const checkAuthStatusAPI = async () => {
   const response = await axios.get(`${BASE_URL}/users/checkAuthenticated`, {
