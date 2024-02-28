@@ -45,9 +45,9 @@ const userController = {
       const token = jwt.sign({ id: user?._id }, process.env.JWT_SECRET);
       //set the token into cookie
       res.cookie("token", token, {
-        httpOnly: true,
+       // httpOnly: true,
         secure: false,
-        sameSite: "strict",
+        //sameSite: "strict",
         maxAge: 24 * 60 * 60 * 1000, //1 day
       });
 
