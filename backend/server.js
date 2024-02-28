@@ -41,9 +41,9 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json()); //Pass json data
 // corse middleware
 const corsOptions = {  
-  origin: ['https://goldfish-app-gwh4l.ondigitalocean.app/'],
+  origin: ['https://goldfish-app-gwh4l.ondigitalocean.app'],
   credentials: true};
-app.use(cors());
+app.use(cors(corsOptions));
 // Passport middleware
 app.use(passport.initialize());
 app.use(cookieParser()); //automattically parses the cookie
