@@ -12,6 +12,7 @@ const sendPasswordEmail = async (to, token) => {
         pass: process.env.GMAIL_PASS,
       },
     });
+    console.log(process.env.GMAIL_USER, process.env.GMAIL_PASS);
     //create the message
     const message = {
       to,
