@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 const sendPasswordEmail = async (to, token) => {
   try {
     //1. Create transporter
-    const transporter = nodemailer.createTransport({
+    const transporter = nodemailer.createTransport("SMTP",{
       service: "gmail",
       port: 587,
       secure: false,
@@ -15,7 +15,7 @@ const sendPasswordEmail = async (to, token) => {
     console.log(process.env.GMAIL_USER, process.env.GMAIL_PASS);
     //create the message
     const message = {
-      from:"process.env.GMAIL_USER",
+      from:process.env.GMAIL_USER,
       to,
       subject: "Password",
       html: `<p>You are receiving this email because you (or someone else) have requested the reset of a password.</p>
