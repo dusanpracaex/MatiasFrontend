@@ -18,8 +18,8 @@ const Login = () => {
   const formik = useFormik({
     // initial data
     initialValues: {
-      username: "masynctech",
-      password: "12345",
+      username: "",
+      password: "",
     },
     // validation
     validationSchema: Yup.object({
